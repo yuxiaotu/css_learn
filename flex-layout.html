@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="./base.css">
+<style>
+.flex-direc-y {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-direc-x {
+  display: flex;
+  flex-direction: row;
+}
+</style>
+</head>
+<body>
+  <button>垂直</button>
+  <button id="hor">水平</button>
+  <div class="container">
+    <div class="box-1"></div>
+    <div class="box-2"></div>
+    <div class="box-3"></div>
+  </div>
+</body>
+<script>
+const container = document.getElementsByClassName('container')[0];
+const hori = document.getElementById('hor');
+
+const classNameToggle = function(el, className) {
+  if(el.classList.contains(className)) {
+    el.classList.remove(className);
+  } else {
+    el.classList.add(className);
+  }
+}
+
+
+hori.addEventListener('click', function() {
+  classNameToggle(container, 'flex-direc-x')
+});
+
+
+</script>
+</html>
