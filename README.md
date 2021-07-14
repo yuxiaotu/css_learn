@@ -15,8 +15,8 @@
 - [Flex 布局](./note/Flex_layout.md)
 - [Grid 布局](./note/Grid_layout.md)
 - [伪类](./note/Pseudo_class.md)
-- [伪元素](./Pseudo_element.md)
-- [盒模型](Box_model.md)
+- [伪元素](./note/Pseudo_element.md)
+- [盒模型](./note/Box_model.md)
 - [BFC](./note/BFC.md)
 
 <br>
