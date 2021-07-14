@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      .container {
+        height: 100vh;
+        background: url(https://cdn.pixabay.com/photo/2021/07/02/19/09/lavenders-6382337_960_720.jpg);
+        background-size: cover;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5% 5%;
+        padding: 2% 2%;
+      }
+  
+      .container > div {
+        background-color: rgba(255, 255, 255, .7);
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .g-filter {
+        filter: blur(6px);
+      }
+
+      .g-backdrop-filter {
+        backdrop-filter: blur(6px);
+      }
+
+      .g-glossy {
+        background-color: rgba(255, 255, 255, 0.5);
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+      }
+
+      .g-glossy::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        background-image: url(https://cdn.pixabay.com/photo/2021/07/02/19/09/lavenders-6382337_960_720.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        filter: blur(10px);
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>Normal</div>
+      <div class="g-filter">Filter</div>
+      <div class="g-backdrop-filter">Backdrop Filter</div>
+      <div class="g-glossy">frosted glass effect</div>
+    </div>
+  </body>
+</html>
