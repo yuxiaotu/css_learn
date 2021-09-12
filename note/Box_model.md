@@ -1,12 +1,10 @@
 # 盒模型
 
-> 网页中每个一个元素都像是一个个的盒子，而元素之间的排列和布局就像是大盒子中放入了小盒子。而我们所看到的整个网页就像是俯视这些放在一起的盒子。
+> **参考**：[MDN 盒模型](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model)
 
-> 参考资料：[MDN 盒模型](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model)
+网页中每个一个元素都像是一个个的盒子，而元素之间的排列和布局就像是大盒子中放入了小盒子。而我们所看到的整个网页就像是俯视这些放在一起的盒子。
 
-<br>
-
-### 盒模型的各个部分
+## 01.盒模型的各个部分
 
 一个完整的盒子模型由 4 个部分组成，分别是 conent，padding、border、margin。这四个部分也可以看出是四个套在一起的盒子。最大的那个盒子是 margin box 然后套着 border box，再里面套着 padding box ，最小的那个是 content box。
 
@@ -16,15 +14,9 @@
 
 <img src="https://uploadfiles.nowcoder.com/images/20191016/138549510_1571192703575_F65244E03F1CC2B16471E8ADC4821E42" alt="box-model" style="zoom: 40%;" />
 
-<br>
-
 需要注意的是完整的盒模型只作用于块级元素，而内联元素只使用了盒模型中定义的部分内容。
 
-<br>
-
-
-
-### 盒模型种类
+## 02.盒模型种类
 
 盒模型有两种，分别称为 「边框盒模型」和 「内容盒模型」。
 
