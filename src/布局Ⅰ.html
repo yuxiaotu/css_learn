@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding:0;
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      background-color: #f7f8fa;
+    }
+
+    h1, h2, h3, h4, p {
+      margin: 0;
+    }
+    .container {
+      width: 50%;
+      height: 600px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .item-list {
+      padding: 10px;
+      background-color: #ffffff;
+    }
+    .item {
+      width: 100%;
+      height: 100px;
+      margin-top: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+   
+    }
+    .summary {
+      width: 250px;
+      text-overflow:ellipsis; 
+      white-space:nowrap; 
+      overflow:hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div></div>
+    <div class="item-list">
+      <div class="item">
+        <img src="https://www.collinsdictionary.com/images/full/apple_158989157.jpg" 
+             width="80" 
+             height="80"
+        />
+        <div>
+          <h3>苹果</h3>
+          <div class="summary">
+            苹果里面含有大量的维生素C，
+            维生素C对于身体的免疫力提高有很大的帮助作用。
+            另外苹果的抗氧化成分也很丰富，对抗体内有害的自由基，
+            有很大的作用。
+          </div>
+          
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://www.kroger.com/product/images/xlarge/front/0000000004011" 
+             width="80" 
+             height="80"
+        />
+        <div>
+          <h3>香蕉</h3>
+          <div class="summary">
+            香蕉中含有大量精氨酸，能活化生长激素，达到美容养颜以及瘦身效果。
+            在23点到凌晨1点是体内生长激素分泌最旺盛的时候，
+            睡觉前吃根香蕉能刺激生长激素分泌，达到抗衰老和燃脂效果。
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
