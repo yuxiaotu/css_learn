@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      background-color: #f7f8fa;
+    }
+    h2,h3, p {
+      margin: 0;
+    }
+    .card {
+      width: 350px;
+      height: 450px;
+      padding: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+    }
+    .good {
+      transition: all ease .5s;
+    }
+    .good:hover {
+      transform: scale(2) translateX(-50px);
+      
+    }
+    .info {
+      width: 80%
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="good" src="apple.png" width="300" />
+    <div class="info">
+      <h2>苹果</h2>
+      <h3 style="color: red">3/斤</h3>
+      <p style="color: #969799">苹果里面含有大量的维生素C，
+        维生素C对于身体的免疫力提高有很大的帮助作用。</p>
+    </div>
+  </div>
+</body>
+</html>
