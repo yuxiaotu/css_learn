@@ -1,34 +1,126 @@
 # BFC
 
-> **参考**：[BFC in CSS](https://wangyeux.medium.com/bfc-block-formatting-context-in-css-d3eb384317e2)，
->
-> ​            [创建BFC](https://www.jianshu.com/p/88a11ff90794)
+> **参考**：[BFC in CSS](https://wangyeux.medium.com/bfc-block-formatting-context-in-css-d3eb384317e2) | [创建BFC](https://www.jianshu.com/p/88a11ff90794) | [10分钟理解BFC原理](https://zhuanlan.zhihu.com/p/25321647)
 
-BFC 是 Block Formationg Context 的缩写，中文叫做「块级格式化上下文」。可以理解为让某个区域成为一个独立的区域而不被其他的元素影响。
+BFC 是 Block Formating Context 的缩写，中文叫做「块级格式化上下文」，是 CSS 布局中的一个概念。可以理解为让某个区域成为一个独立的区域而不被其他的元素影响，决定了其中的子元素如何排列，以及和其他元素的关系。
 
-## 01.BFC 能解决的问题
+## 01.触发 BFC
 
-### 包含内部浮动
+只要元素满足下面任一条件就可以触发 BFC 特性：
 
-当一个元素设置 float 属性的属性的时候，它就会脱离文档流，所以它就不会被父元素所包裹。
+- body 根元素
+- 浮动元素，float 除 none 以外的值
+- 决定定位，position
+- display 为 inline-block，table-cells，flex
+- overflow 除了 visible 以外的值 
 
-将父元素变成一个 BFC 那么就能够包裹其中浮动的子元素。
+## 02.BFC 特性
 
-### 排除外部浮动
+### 外边距崩塌
 
-当两个同级的兄弟元素其中一个使用了 float 属性进行浮动，那么由于脱离了文档流，它就会和其他的兄弟节点发生重叠的情况。把包裹这两个元素的父元素设置为 BFC ，那么两者就不会有重叠的情况了。
+同一个 BFC 中当两个元素上下或者是左右排列的时候，在两者相邻的外边距一样的情况下，那么两者之间的实际间隔只有一倍的外边距，而不是两者的外边距之和。
 
-### 防止外边距崩塌
+```css
+div {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    margin: 100px;
+}
+```
 
-当两个元素上下或者是左右排列的时候，在两者相邻的外边距一样的情况下，那么两者之间的实际间隔只有一倍的外边距，而不是两者的外边距之和。把这两个元素放入不同的 BFC 就可以放在边距崩塌。
+```html
+<body>
+    <div></div>
+    <div></div>
+</body>
+```
 
-## 02.使用 BFC
+把这两个元素放入不同的 BFC 就可以防止边距崩塌。
 
-使用下面这些方法就可以创建一个 BFC :
+```css
+.container {
+	overflow: hidden;
+}
+p {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    margin: 100px;
+}
+```
 
-- 文档流的根节点
-- 使用 flow-root 属性，使元素类似于根节点
-- 使用 float 属性，而它的值不能是 none
-- 使用 position 属性其值为 absolute 或 fixed
--  Grid 和 Flex 布局的直接子元素
--   ....  
+```html
+<div class="container">
+    <p></p>
+</div>
+<div class="container">
+    <p></p>
+</div>
+```
+
+### 清除浮动
+
+浮动的元素会脱离文档流
+
+```css
+.father {
+    border: 1px solid #000;
+}
+.son {
+    width: 100px;
+    height: 100px;
+    background: #eee;
+    float: left;
+}
+```
+
+```html
+<div class="father">
+    <div class="son"></div>
+</div>
+```
+
+子元素设置了浮动，此时父元素的高度只剩下了 2px 的边框距离，就不能包裹子元素了。使用触发 BFC 的容器就可以包裹浮动的子元素了。
+
+```css
+.father {
+    border: 1px solid #000;
+    overflow: hidden
+}
+```
+
+### 浮动元素覆盖
+
+```css
+.a {
+    height: 100px;
+    width: 100px;
+    float: left;
+    background: lightblue;
+}
+.b {
+    height: 200px;
+    width: 200px;
+    background: #eee;
+}
+```
+
+```html
+<div class="a"></div>
+<div class="b"></div>
+```
+
+虽然两个容器是 “兄弟” 关系，但是会出现叠加的效果。第二个元素触发 BFC 就可以避免元素覆盖。
+
+```css
+.b {
+    height: 200px;
+    width: 200px;
+    background: #eee;
+    overflow: hidden;
+}
+```
+
+
+
