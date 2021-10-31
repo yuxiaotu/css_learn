@@ -1,6 +1,6 @@
 # 伪元素
 
-> **参考**：[标准伪元素索引](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Pseudo-elements) | [伪元素是怎么回事儿](https://juejin.cn/post/6997217183738626084) | [巧用伪元素before和after](https://juejin.cn/post/6854573204011221000)
+> **参考**：[标准伪元素索引](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Pseudo-elements) | [伪元素是怎么回事儿](https://juejin.cn/post/6997217183738626084) | [巧用伪元素before和after](https://juejin.cn/post/6854573204011221000)    
 
  「伪元素」代表了某个元素的子元素，而这个子元素只是在逻辑上存在，并不存在于文档树中。伪元素同样可以为其添加样式。
 

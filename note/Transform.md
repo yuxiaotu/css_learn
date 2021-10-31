@@ -1,6 +1,6 @@
 # transform 形变属性
 
-> **参考**：[w3cschool transform](https://www.w3schools.com/css/css3_2dtransforms.asp)
+> **参考**：[w3cschool transform](https://www.w3schools.com/css/css3_2dtransforms.asp)  
 
 transform 可以对元素进行旋转，缩放，倾斜，平移等操作。这些变化可以分为 2D 和 3D 的变换。
 

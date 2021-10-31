@@ -2,7 +2,7 @@
 
 > **参考：**[position:sticky 粘性布局](https://www.cnblogs.com/coco1s/p/6402723.html) | [CSS定位属性](https://juejin.cn/post/6921600028821684237) | [CSS定位机制](https://www.cnblogs.com/linghu-java/p/8964488.html)
 
-position 属性用于指定一个元素在文档中的定位方式，CSS 有三种定位机制，分别是「普通流」、「float（浮动）」、「position（定位）」。
+position 属性用于指定一个元素在文档中的定位方式，CSS 有三种定位机制，分别是「普通流」、「float（浮动）」、「position（定位）」。 
 
 **普通流：**元素的位置就是按照其在 HTML 文档中的位置来决定。块级元素按照从上到下的顺序排列，每个块级元素占据一整行。而行内元素在一行中水平分布。
 
