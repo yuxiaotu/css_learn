@@ -1,6 +1,6 @@
 # transition 过渡属性
 
-> **参考：**[CSS transtions](https://www.w3schools.com/css/css3_transitions.asp)|[transition 技巧和细节](https://juejin.cn/post/6924114612799406093)
+> **参考：**[CSS transtions](https://www.w3schools.com/css/css3_transitions.asp) | [transition 技巧和细节](https://juejin.cn/post/6924114612799406093)
 
 CSS 的 transtion 属性可以在不使用 JavaScript 的情况下实现简单的动画交互效果。给一个元素添加 transition 后，让其某个属性从状态 A 变成状态 B 时，不在是非常直接突兀，而是带一个补间动画。    
 
