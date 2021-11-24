@@ -31,12 +31,13 @@ div {
 
 ```html
 <body>
-    <div></div>
-    <div></div>
+    <div id="1"></div>
+    <div id="2"></div>
 </body>
 ```
+div1 和 div2 虽然都有 100px 的外边距，但是两者之间的间距只有 100px，而不是 200px。
 
-把这两个元素放入不同的 BFC 就可以防止边距崩塌。
+如果把这两个元素放入不同的 BFC 就可以防止边距崩塌，从而然两者的间距保持 200px。使用 `overflow` 属性触发 BFC。
 
 ```css
 .container {
@@ -51,10 +52,10 @@ p {
 ```
 
 ```html
-<div class="container">
+<div id="1" class="container">
     <p></p>
 </div>
-<div class="container">
+<div id="2" class="container">
     <p></p>
 </div>
 ```
@@ -81,7 +82,7 @@ p {
 </div>
 ```
 
-子元素设置了浮动，此时父元素的高度只剩下了 2px 的边框距离，就不能包裹子元素了。使用触发 BFC 的容器就可以包裹浮动的子元素了。
+由于子元素设置了浮动，此时父元素的高度只剩下了 2px 的边框距离，就不能包裹子元素了。使用触发 BFC 的容器就可以包裹浮动的子元素了。
 
 ```css
 .father {
