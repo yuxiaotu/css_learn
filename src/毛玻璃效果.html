@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>毛玻璃效果</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism.min.css"
+      rel="stylesheet"
+    />
     <style>
       body {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
-      .container {
-        height: 100vh;
+
+      body > div {
+        width: 50%;
+        height: 450px;
         background: url(https://cdn.pixabay.com/photo/2021/07/02/19/09/lavenders-6382337_960_720.jpg);
         background-size: cover;
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(3, 1fr);
-        gap: 5% 5%;
-        padding: 2% 2%;
+        position: relative;
+        overflow: hiddens;
       }
-  
-      .container > div {
-        background-color: rgba(255, 255, 255, .7);
-        font-size: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+      pre {
+        width: 50%;
+      }
+
+      pre[class*="language-"] {
+        padding: 0;
+      }
+
+      h1,
+      h2,
+      p {
+        align-self: flex-start;
+        margin-left: 25%;
+      }
+
+      .show {
+        width: 200px;
+        height: 200px;
+        background-color: rgba(255, 255, 255, 0.7);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
       .g-filter {
@@ -42,10 +63,10 @@
       }
 
       .g-glossy::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
-        left:0;
+        left: 0;
         right: 0;
         bottom: 0;
         background-image: url(https://cdn.pixabay.com/photo/2021/07/02/19/09/lavenders-6382337_960_720.jpg);
@@ -57,12 +78,62 @@
       }
     </style>
   </head>
+
   <body>
-    <div class="container">
-      <div>Normal</div>
-      <div class="g-filter">Filter</div>
-      <div class="g-backdrop-filter">Backdrop Filter</div>
-      <div class="g-glossy">frosted glass effect</div>
+    <h1>毛玻璃效果</h1>
+    <!-- filter -->
+    <h2>01.</h2>
+    <pre>
+    <code class="language-css">
+    .glossy {
+      filter: blur(6px);
+    }</code>
+  </pre>
+    <div>
+      <div class="show g-filter"></div>
+    </div>
+
+    <!-- backdrop-filter -->
+    <h2>02.</h2>
+    <pre>
+    <code class="language-css">
+    .glossy {
+      backdrop-filter: blur(6px);
+    }</code>
+  </pre>
+    <div>
+      <div class="show g-backdrop-filter"></div>
+    </div>
+
+    <!-- 伪元素 -->
+    <h2>02.</h2>
+    <pre>
+    <code class="language-css">
+      .glossy {
+        background-color: rgba(255, 255, 255, 0.5);
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+      }
+  
+      .glossy::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        background-image: url(...);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        filter: blur(10px);
+        z-index: -1;
+      }</code>
+  </pre>
+    <div>
+      <div class="show g-glossy"></div>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/prism.min.js"></script>
 </html>
