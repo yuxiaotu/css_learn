@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>过滤属性|filter</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism.min.css"
       rel="stylesheet"
@@ -17,6 +17,7 @@
         width: 50%;
         height: 450px;
         background-color: #f2f3f6;
+        position: relative;
       }
 
       pre {
@@ -33,28 +34,35 @@
         align-self: flex-start;
         margin-left: 25%;
       }
+
+      .box-1 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(135, 206, 235);
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        filter: drop-shadow(5px 5px 10px rgba(135, 206, 235, 0.9))
+      }
     </style>
   </head>
 
   <body>
-    <!--  -->
-    <h1>标题</h1>
-    <h2>01.</h2>
-    <pre>
-    <code class="language-css">
-    // 代码
-    </code>
-  </pre>
-    <div></div>
+    <h1>过滤属性|filter</h1>
 
     <!--  -->
-    <h2>02.</h2>
+    <h2>01.drop-shadow()</h2>
     <pre>
     <code class="language-css">
-    // 代码
-    </code>
+    {
+      filter: drop-shadow(5px 5px 10px rgba(135, 206, 235, 0.9))
+    }</code>
   </pre>
-    <div></div>
+    <div>
+      <div class="box-1"></div>
+    </div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/prism.min.js"></script>
 </html>
