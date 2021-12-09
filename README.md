@@ -20,6 +20,8 @@
 - [盒模型概念](./note/boxmodel.md)
 - [BFC | 块级格式化上下文](./note/BFC.md)
 - [实现毛玻璃效果方法](./note/毛玻璃效果.md)
+- [属性的继承](./note/属性的继承.md)
+- [图片适应](./note/图片适应.md)
 
 ## 代码
 - [阴影效果](./shadow.html)
