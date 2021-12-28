@@ -36,25 +36,6 @@ a {
   align-items: center;
 }
 
-.effect {
-  width: 45vw;
-  height: 70vh;
-  margin: 0 20px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  perspective: 600px;
-  background-color: #f2f3f5;
-}
 
-.source {
-  width: 40vw;
-  height: 70vh;
-}
-
-.source pre {
-  margin: 0;
-}
 
 

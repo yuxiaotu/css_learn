@@ -1,52 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>翻转卡片</title>
-    <link href="../style//base-1.css" rel="stylesheet" />
-    <link href="../style/turn-card.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css"
-    />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
+    <title>卡片翻转</title>
+    <link href="../style/base.css" rel="stylesheet"/>
+    <link href="../style/turn-card.css" rel="stylesheet"/>
   </head>
   <body>
     <div class="container">
-      <div class="effect">
-        <div class="card">
-          <div class="card-face card-front"></div>
-          <div class="card-face card-back"></div>
-        </div>
-      </div>
-
-      <div class="source">
-        <pre><code class="language-css">
-          .card {
-            width: 300px;
-            height: 300px;
-            position: relative;
-            transition: transform .8s;
-            transform-style: preserve-3d;
-          }
-          .card-face {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            backface-visibility: hidden;
-          }
-          .card-front {
-            background-color: skyblue;
-          }
-          .card-back {
-            background-color: orange;
-            transform: rotateY(-180deg);
-          }
-          .card:hover {
-            transform: rotateY(180deg);
-          }
-          </code>
-        </pre>
+      <div class="card">
+        <div class="card-face card-front"></div>
+        <div class="card-face card-back"></div>
       </div>
     </div>
   </body>

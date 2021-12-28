@@ -2,78 +2,27 @@
 <html>
   <head>
     <title>毛玻璃效果</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/prism.min.js"></script>
+    <link href="../style/base.css" rel="stylesheet" />
     <link href="../style/background-blur.css" rel="stylesheet" />
-    <link href="../style/base-2.css" rel="stylesheet" />
     <style>
       .container {
-        width: 50%;
-        height: 450px;
-        background: url(../assets/1.jfif);
+        background-image: url(../assets/0.jpg);
         background-size: cover;
-        position: relative;
-        overflow: hidden;
+      }
+
+      .container > div {
+        width: 250px;
+        height: 250px;
+        margin: 40px;
+        background-color: rgba(255, 255, 255, 0.5);
       }
     </style>
   </head>
-
   <body>
-    <!-- 01. filter -->
-    <h2>01.</h2>
-    <pre>
-    <code class="language-css">
-    .glossy {
-      filter: blur(6px);
-    }</code>
-  </pre>
     <div class="container">
-      <div class="effect g-filter"></div>
-    </div>
-
-    <!-- 02.backdrop-filter -->
-    <h2>02.</h2>
-    <pre>
-    <code class="language-css">
-    .glossy {
-      backdrop-filter: blur(6px);
-    }</code>
-  </pre>
-    <div class="container">
-      <div class="effect g-backdrop-filter"></div>
-    </div>
-
-    <!-- 03.伪元素 -->
-    <h2>02.</h2>
-    <pre>
-    <code class="language-css">
-      .glossy {
-        background-color: rgba(255, 255, 255, 0.5);
-        position: relative;
-        overflow: hidden;
-        z-index: 2;
-      }
-  
-      .glossy::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left:0;
-        right: 0;
-        bottom: 0;
-        background-image: url(...);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        filter: blur(10px);
-        z-index: -1;
-      }</code>
-  </pre>
-    <div class="container">
-      <div class="effect g-glossy"></div>
+      <div class="g-filter"></div>
+      <div class="g-glossy"></div>
+      <div class="g-backdrop-filter"></div>
     </div>
   </body>
 </html>
