@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+h2,
+p {
+  align-self: flex-start;
+  margin-left: 25%;
+}
+
+pre {
+  width: 50%;
+}
+
+pre[class*="language-"] {
+  padding: 0;
+}
+
+.container {
+  width: 50%;
+  height: 450px;
+  background: #f2f3f5;
+  position: relative;
+  overflow: hidden;
+}
+
+.effect {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

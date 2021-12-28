@@ -24,6 +24,5 @@
 - [图片适应](./note/图片适应.md)
 
 ## 代码
-- [阴影效果](./shadow.html)
-- [毛玻璃效果](./fronsted_glass.html)
-
+- [毛玻璃效果](./src/style/background_blur.css)
+- [翻转卡片](./src/style/turn_card.css)
