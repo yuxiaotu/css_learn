@@ -1,0 +1,26 @@
+.box {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box img {
+  width: 200px;
+  height: 200px;
+  display: inline;
+  transition: transform .5s ease;
+  position: absolute;
+  border: 5px solid #fff;
+  border-radius: 8px;
+}
+
+.img-1 {
+  transform: rotateZ(10deg);
+}
+
+.img-2 {
+  transform: rotateZ(-10deg);
+}
