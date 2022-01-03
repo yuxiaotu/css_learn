@@ -1,20 +1,22 @@
-.box {
+/*===================
+    卡片堆叠和展开
+===================*/
+
+/* http://www.htmleaf.com/jQuery/Image-Effects/201506212080.html */
+
+.container {
+  position: absolute;
   width: 200px;
   height: 200px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
-.box img {
+.container img {
+  position: absolute;
   width: 200px;
   height: 200px;
-  display: inline;
-  transition: transform .5s ease;
-  position: absolute;
   border: 5px solid #fff;
   border-radius: 8px;
+  transition: transform .5s ease;
 }
 
 .img-1 {

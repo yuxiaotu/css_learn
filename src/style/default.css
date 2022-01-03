@@ -1,22 +1,27 @@
 body {
-  margin: 0;
-  padding: 0;
-}
-
-.collection {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
-  margin: 100px auto 0;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.hori-ver-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .topic-card {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 120px;
-  margin: 15px;
+  width: 250px;
+  height: 250px;
+  margin: 20px;
   font-size: 20px;
   background-color: #f2f3f5;
   border-radius: 10px;
@@ -26,16 +31,6 @@ a {
   text-decoration: none;
   color:inherit;
 }
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-}
-
 
 .bgcolor-1 { background: #f0efee; }
 .bgcolor-2 { background: #f9f9f9; }

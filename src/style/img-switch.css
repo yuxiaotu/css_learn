@@ -1,0 +1,45 @@
+/*===========================
+    resize 实现图片切换预览
+===========================*/
+
+/* https://github.com/chokcoco/iCSS/issues/133 */
+
+.outer {
+  position: relative;
+  overflow: hidden;
+  width: 650px;
+  height: 340px;
+  background-image: url(../assets/0.jpg);
+}
+
+.inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 650px;
+  min-width: 0;
+  height: 340px;
+  background-image: url(../assets/1.jfif);
+}
+
+.g-resize {
+  position: relative;
+  overflow: scroll;
+  resize: horizontal;
+  width: 0;
+  height: 340px;
+  max-width: 650px;
+  min-width: 15px;
+  opacity: 0;
+}
+
+.inner::before {
+  content: "<>";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  color: #ffffff;
+  line-height: 340px;
+  background: rgba(0, 0, 0, 0.5);
+}

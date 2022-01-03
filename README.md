@@ -1,8 +1,4 @@
-![CSS](https://mssionline.com/wp-content/uploads/2020/10/css-illustration.png)
-
-# CSS
-
-> 层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现 HTML 或 XML 等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。CSS 能够对网页中元素位置的排版进行像素级精确控制，支持几乎所有的字体字号样式，拥有对网页对象和模型样式编辑的能力。
+# CSS 学习笔记
 
 ## 基础
 - [position | 元素定位](./note/position.md)
@@ -14,6 +10,8 @@
 - [filter | 滤镜属性](./note/filter.md)
 - [flex | 布局方式](./note/flex.md)
 - [grid 布局方式](./note/grid.md)
+- [resize | 调整元素宽高](./note/resize.md)
+- [mask | 罩遮属性](./note/mask.md)
 - [选择器](./note/selectors.md)
 - [伪类](./note/pseudoeclass.md)
 - [伪元素](./note/pseudoelement.md)
@@ -24,7 +22,8 @@
 - [图片适应](./note/图片适应.md)
 
 ## 代码
-- [毛玻璃效果](./src/style/background_blur.css)
-- [翻转卡片](./src/style/turn_card.css)
+- [毛玻璃效果 | filter: blur() | backdrop-filter: blur()](./src/style/background_blur.css)
+- [翻转卡片 | backface-visibility: hidden](./src/style/turn_card.css)
 - [阴影效果](./src/style/boxshadow.css)
 - [阅读进度条](./src/style/read-line.css)
+- [图片切换预览 | resize](./src/style/img-switch.css)

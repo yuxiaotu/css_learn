@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>毛玻璃效果</title>
-    <link href="../style/base.css" rel="stylesheet" />
+    <link href="../style/default.css" rel="stylesheet" />
     <link href="../style/background-blur.css" rel="stylesheet" />
     <style>
       .container {
@@ -10,19 +10,29 @@
         background-size: cover;
       }
 
-      .container > div {
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 250px;
         height: 250px;
         margin: 40px;
+        font-size: 30px;
+        font-weight: 600;
+        border-radius: 10px;
         background-color: rgba(255, 255, 255, 0.5);
       }
     </style>
   </head>
-  <body>
-    <div class="container">
-      <div class="g-filter"></div>
-      <div class="g-glossy"></div>
-      <div class="g-backdrop-filter"></div>
+  <body class="container">
+    <div class="g-filter box">
+      文字
+    </div>
+    <div class="g-glossy box">
+      文字
+    </div>
+    <div class="g-backdrop-filter box">
+      文字
     </div>
   </body>
 </html>
