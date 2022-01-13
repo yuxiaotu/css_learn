@@ -1,30 +1,41 @@
-body {
+.container-1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   width: 100vw;
   height: 100vh;
   padding: 0;
   margin: 0;
 }
 
-.hori-ver-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.box-1 > div {
+  width: 25vw;
+  height: 30vh;
+  margin: 20px;
+  border-radius: 8px;
+  background-color: #F5A1D5;
 }
 
-.topic-card {
+.container-2 {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  padding:0 300px;
+}
+
+.box-2 > div {
   width: 250px;
   height: 250px;
   margin: 20px;
   font-size: 20px;
-  background-color: #f2f3f5;
   border-radius: 10px;
+  background-color: #F5A1D5;
+}
+
+.h-v-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -32,16 +43,13 @@ a {
   color:inherit;
 }
 
-.bgcolor-1 { background: #f0efee; }
-.bgcolor-2 { background: #f9f9f9; }
-.bgcolor-3 { background: #e8e8e8; }/*light grey*/
-.bgcolor-4 { background: #2f3238; color: #fff; }/*Dark grey*/
-.bgcolor-5 { background: #df6659; color: #521e18; }/*pink1*/
-.bgcolor-6 { background: #2fa8ec; }/*sky blue*/
-.bgcolor-7 { background: #d0d6d6; }/*White tea*/
-.bgcolor-8 { background: #3d4444; color: #fff; }/*Dark grey2*/
-.bgcolor-9 { background: #ef3f52; color: #fff;}/*pink2*/
-.bgcolor-10{ background: #64448f; color: #fff;}/*Violet*/
-.bgcolor-11{ background: #3755ad; color: #fff;}/*dark blue*/
-.bgcolor-12{ background: #3498DB; color: #fff;}/*light blue*/
-.bgcolor-13{ background: linear-gradient(to left top, #F5A1D5 0%, #CDD3E9 100%);}
+.bgcolor-15{ background: linear-gradient(to bottom, #BCE6FF 0%, #88CDF6); color: #9B9B9B}
+.bgcolor-14{ background: linear-gradient(to bottom, #FFF 0%, #D1D1D1 100%); color: #264D59}
+.bgcolor-13{ background: linear-gradient(to left top, #F5A1D5 0%, #CDD3E9 100%); color: #FFF}
+
+
+@media screen and (max-width: 1200px) {
+  .container-2 {
+    padding: 0 100px;
+  }
+}

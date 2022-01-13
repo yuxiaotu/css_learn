@@ -10,10 +10,15 @@
 
 需要注意的是完整的盒模型只作用于块级元素，而内联元素只使用了盒模型中定义的部分内容。
 
+**盒模型立体示意图：**
+
 <img src="https://uploadfiles.nowcoder.com/images/20191016/138549510_1571192703575_F65244E03F1CC2B16471E8ADC4821E42" alt="box-model" style="zoom: 40%;" />
 
-## 02. 盒模型种类
+**盒模型示意图：**
 
+![](https://camo.githubusercontent.com/af03985775ee854009316aa398ca01cecbc90355dce7106cc2a74ebfd2530314/68747470733a2f2f7374617469632e7675652d6a732e636f6d2f62323534386230302d386639622d313165622d616239302d6439616538313462323430642e706e67)
+
+## 02. 盒模型种类
 盒模型有两种，分别为 「边框盒模型」和 「内容盒模型」。默认情况下都是内容盒模型，使用 `box-sizing:border-box` 可以将元素设置为边框盒模型。
 
 <img src="https://connorshea.gitlab.io/images/posts/css-that-doesnt-suck/content-box-vs-border-box.png" alt="box-size" style="zoom:70%;" />
