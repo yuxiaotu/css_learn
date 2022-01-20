@@ -9,27 +9,25 @@
   margin: 0;
 }
 
-.box-1 > div {
-  width: 25vw;
+.container-1 > div {
+  width: 20vw;
   height: 30vh;
   margin: 20px;
   border-radius: 8px;
-  background-color: #F5A1D5;
+  background-color: #f5a1d5;
 }
 
 .container-2 {
-  display: flex;
-  flex-wrap: wrap;
-  padding:0 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: repeat(3, 25%);
+  justify-content: space-evenly;
+  align-content: space-evenly;
 }
 
-.box-2 > div {
-  width: 250px;
-  height: 250px;
-  margin: 20px;
-  font-size: 20px;
-  border-radius: 10px;
-  background-color: #F5A1D5;
+.container-2 > div {
+  border-radius: 8px;
+  background-color: #f5a1d5;
 }
 
 .h-v-center {
@@ -40,16 +38,19 @@
 
 a {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
 
-.bgcolor-15{ background: linear-gradient(to bottom, #BCE6FF 0%, #88CDF6); color: #9B9B9B}
-.bgcolor-14{ background: linear-gradient(to bottom, #FFF 0%, #D1D1D1 100%); color: #264D59}
-.bgcolor-13{ background: linear-gradient(to left top, #F5A1D5 0%, #CDD3E9 100%); color: #FFF}
-
-
-@media screen and (max-width: 1200px) {
-  .container-2 {
-    padding: 0 100px;
-  }
+.bgcolor-15 {
+  background: linear-gradient(to bottom, #bce6ff 0%, #88cdf6);
+  color: #9b9b9b;
 }
+.bgcolor-14 {
+  background: linear-gradient(to bottom, #fff 0%, #d1d1d1 100%);
+  color: #264d59;
+}
+.bgcolor-13 {
+  background: linear-gradient(to left top, #f5a1d5 0%, #cdd3e9 100%);
+  color: #fff;
+}
+

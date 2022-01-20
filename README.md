@@ -12,7 +12,7 @@
 - [grid 布局方式](./note/grid.md)
 - [resize | 调整元素宽高](./note/resize.md)
 - [mask | 罩遮属性](./note/mask.md)
-- [clip-path](./note/clip-path.md)
+- [clip-path | ](./note/clip-path.md)
 - [选择器](./note/selectors.md)
 - [伪类](./note/伪类.md)
 - [伪元素](./note/伪元素.md)
@@ -24,9 +24,11 @@
 - [图片适应](./note/图片适应.md)
 - [元素单位](./note/元素单位.md)
 
+
 ## 代码
 - [毛玻璃效果 | filter: blur() | backdrop-filter: blur()](./src/style/background_blur.css)
 - [翻转卡片 | backface-visibility: hidden](./src/style/turn_card.css)
-- [阴影效果](./src/style/boxshadow.css)
+- [阴影效果 | box-shadow](./src/style/boxshadow.css)
 - [阅读进度条](./src/style/read-line.css)
-- [图片切换预览 | resize](./src/style/img-switch.css)
+- [图片切换预览](./src/style/img-switch.css)
+
