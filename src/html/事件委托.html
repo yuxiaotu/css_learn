@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../style/default.css" rel="stylesheet">
+    <style>
+      .box {
+        width: 400px;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body class="container-1 bgcolor-14">
+    <div id="b" class="box">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    const box = document.getElementById("b");
+    box.addEventListener('click', (event) => {
+      console.log(event.target.innerHTML);
+    })
+  </script>
+</html>

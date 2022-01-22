@@ -1,20 +1,24 @@
 # transition 过渡属性
 
-> **参考：**[CSS transtions](https://www.w3schools.com/css/css3_transitions.asp) | [transition 技巧和细节](https://juejin.cn/post/6924114612799406093)
-
+## 01. 作用
 CSS 的 transtion 属性可以在不使用 JavaScript 的情况下实现简单的动画交互效果。给一个元素添加 transition 后，让其某个属性从状态 A 变成状态 B 时，不在是非常直接突兀，而是带一个补间动画。    
 
-## 01.使用
-
+## 02. 使用
 使用 transition 时，可以设置 4 个属性分别是：
 
-- transition-property：需要过渡效果的 CSS 属性，默认值为 all，即元素的所有属性都将产生过渡变化。
+- #### transition-property：
+  需要过渡效果的 CSS 属性，默认值为 all，即元素的所有属性都将产生过渡变化。
 
-- transition-delay：延迟时间，默认值是 0。
-- transition-duration：持续时间，整个过渡动画效果将在指定时间内完成，默认值是 0 。
-- transition-timing-function：过渡时间函数，设定整个过渡运动在不同时间段的快慢情况，默认值是 ease。
+- #### transition-delay：
+  延迟时间，默认值是 0。
 
-transition 效果需要由某些行为进行触发，经常会使用 `:hover`  也就是当鼠标悬浮在元素上时进行触发。
+- #### transition-duration：
+  持续时间，整个过渡动画效果将在指定时间内完成，默认值是 0 。
+
+- #### transition-timing-function：
+  过渡时间函数，设定整个过渡运动在不同时间段的快慢情况，默认值是 ease。
+
+`transition` 效果需要由某些行为进行触发，经常会使用 `:hover`  也就是当鼠标悬浮在元素上时进行触发。
 
 当鼠标悬浮在元素上时，宽度将变成 200px，变化过程会在 2s 内完成。
 
@@ -30,8 +34,7 @@ div:hover {
 }
 ```
 
-## 02.时间函数
-
+## 02. 时间函数
 `transition-timing-function` 属性描述了动画随着时间运动的速度，可以使用几种常见的速率，也可以使用贝塞尔曲线来自定义动画的变换速度。
 
 几种常见的速率：
@@ -50,8 +53,7 @@ div:hover {
 
 此网站：[cubic-bezier](https://cubic-bezier.com/#.17,.67,.83,.67)，可以帮助设置自定义曲线。
 
-## 03.复合效果
-
+## 03. 复合效果
 可以分别控制每一个属性。
 
 ```css
