@@ -22,13 +22,7 @@
 - [属性的继承](./note/属性的继承.md)
 - [图片适应](./note/图片适应.md)
 - [元素单位](./note/元素单位.md)
-- [实现毛玻璃效果方法](./note/毛玻璃效果.md)
 
 
-## 代码
-- [毛玻璃效果 | filter: blur() | backdrop-filter: blur()](./src/style/background_blur.css)
-- [翻转卡片 | backface-visibility: hidden](./src/style/turn_card.css)
-- [阴影效果 | box-shadow](./src/style/boxshadow.css)
-- [阅读进度条](./src/style/read-line.css)
-- [图片切换预览](./src/style/img-switch.css)
+
 
