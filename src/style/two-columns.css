@@ -1,0 +1,41 @@
+/*==================
+      两栏自适应
+==================*/
+
+/*------- 1 ---------*/
+.box-content {
+  display: flex;
+}
+
+.left {
+  width: 300px;
+  height: 100vh;
+}
+
+.right {
+  flex: 1;
+  height: 80vh;
+}
+
+/*------- 2 --------*/
+.box-content-1 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.left-1 {
+  position: fixed;
+  width: 300px;
+  height: 100vh; 
+}
+
+.right-1 {
+  position: absolute;
+  top: 0;
+  left: 300px;
+  bottom: 0;
+  right: 0;
+  width: calc(100vw - 320px);
+  height: 120vh;
+}

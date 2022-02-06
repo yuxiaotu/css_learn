@@ -1,0 +1,51 @@
+/*===================
+      三栏布局
+===================*/
+
+/*----- 1 -----*/
+.left {
+  width: 300px;
+  height: 100vh;
+  float: left;
+}
+
+.right {
+  width: 300px;
+  height: 100vh;
+  float: right;
+}
+
+.center {
+  width: calc(100vw - 600px);
+  height: 150vh;
+  margin-left: 300px;
+}
+
+/*---- 2 ------*/
+.box-content {
+  position: relative;
+}
+
+.left-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+}
+
+.right-1 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+}
+
+.center-1 {
+  position: absolute;
+  top: 0;
+  left: 300px;
+  width: calc(100vw - 600px);
+  height: 120vh;
+}
