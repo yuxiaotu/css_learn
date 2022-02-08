@@ -7,8 +7,8 @@ const pageNames = [
   "两栏布局",
   "卡片翻转",
   "事件委托",
-  "",
-  "",
+  "元素移动",
+  "卡片展开",
 ]
 
 const fragment = document.createDocumentFragment();

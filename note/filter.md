@@ -3,6 +3,9 @@
 ## 01. 作用
 滤镜属性，可以将「模糊」、「颜色偏差」等图形效果用在元素上。用于调整图像、背景和边框的渲染。
 
+
+
+
 ## 02. 滤镜函数
 通过 `filter` 属性的「滤镜函数」来使元素产生相应的效果，如果参数无效，那么滤镜也不会生效了。常用的一些滤镜函数如下:
 
@@ -15,10 +18,12 @@
 - **invert()：**  翻转图像颜色
 - **url()：** 接收一个 XML 文件，该文件设置了 一个[SVG滤镜](https://www.cnblogs.com/coco1s/p/14577507.html)
 
+
 ### 02.1. drop-shadow()
 使用 `box-shadow` 添加阴影时，只能把阴影添加到「盒模型」上，简单的理解就是 `box-shadow` 只能添加一种矩形边框的阴影效果。但是 `drop-shadow` 可以提供更加智能的一种阴影效果，可以沿着元素不规则的边框添加阴影效果，就像下图的效果。
-
+ 
 <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/57c8d1f120724ccca62ca7a66da7c0eb~tplv-k3u1fbpfcp-watermark.awebp" alt="drop-shadow" style="zoom:50%;" />
+
 
 书写方式如下：
 ```css
