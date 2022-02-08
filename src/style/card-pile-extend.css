@@ -4,13 +4,13 @@
 
 /* http://www.htmleaf.com/jQuery/Image-Effects/201506212080.html */
 
-.container {
+.box-content {
   position: absolute;
   width: 200px;
   height: 200px;
 }
 
-.container img {
+.box-content img {
   position: absolute;
   width: 200px;
   height: 200px;
@@ -25,4 +25,12 @@
 
 .img-2 {
   transform: rotateZ(-10deg);
+}
+
+.img-1-move {
+  transform: rotateZ(-10deg) translateX(-220px);
+}
+
+.img-2-move {
+  transform: rotateZ(10deg) translateX(220px);
 }
