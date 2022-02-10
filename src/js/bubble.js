@@ -1,4 +1,5 @@
 const box = document.querySelector('.box');
+const fragment = document.createDocumentFragment();
 
 for (let i = 0; i < 100; i++) {
   let node = document.createElement('div');
@@ -12,5 +13,7 @@ for (let i = 0; i < 100; i++) {
   node.style.height = `${diameter}px`;
 
   node.classList.add(...['bubble', `bgc-${Math.floor(Math.random() * 10)}`]);
-  box.appendChild(node);
+  fragment.appendChild(node);
 }
+
+box.appendChild(fragment);
