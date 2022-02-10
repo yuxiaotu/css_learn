@@ -22,6 +22,7 @@
 - [属性的继承](./note/属性的继承.md)
 - [图片适应](./note/图片适应.md)
 - [元素单位](./note/元素单位.md)
+- [动画 | animation](./note/animation.md)
 
 
 
