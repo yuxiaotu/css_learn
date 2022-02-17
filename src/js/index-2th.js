@@ -9,6 +9,11 @@ const pageNames = [
   "事件委托",
   "元素移动",
   "卡片展开",
+  "图片列表",
+  "元素拖动",
+  "",
+  "",
+  ""
 ]
 
 const fragment = document.createDocumentFragment();
