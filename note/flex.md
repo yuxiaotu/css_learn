@@ -13,7 +13,7 @@
   - [flew-grow](#03-flew-grow)
   - [flew-shrink](#03.3-flew-shrink)
   - [flew-basis](#03-flew-basis)
-  - [align-self](#align-self)
+  - [align-self](###align-self)
 
 
 ## 01 flex 布局的特点
