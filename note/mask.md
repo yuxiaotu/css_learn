@@ -1,11 +1,10 @@
 # mask 属性
 
-## 01. 作用
+## 01 作用
 `mask` 属性允许使用者通过遮罩或者是剪裁特定区域的图片的方式来隐藏一个元素的部分或者是全部可见区域。
 
 
-
-## 02. 使用
+## 02 使用
 使用位图来做遮罩。
 ```css
 mask: url(x.png)
@@ -22,8 +21,7 @@ mask: linear-gradient(#000, transparent)
 ```
 
 
-
-## 03. mask-repeat
+## 03 mask-repeat
 `mask-repeat` 用于设置遮罩区域的重复。可以取下面这些值。
 
 - repeat-x
@@ -34,9 +32,7 @@ mask: linear-gradient(#000, transparent)
 - round
 
 
-
-
-## 04. mask-position
+## 04 mask-position
 `mask-position` 用于设置遮罩区域的定位。可以取下面这些值。
 
 - top
