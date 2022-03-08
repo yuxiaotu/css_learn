@@ -11,7 +11,7 @@
 - [子元素的概念](#03-子元素)
   - [order](#03-order)
   - [flew-grow](#03-flew-grow)
-  - [flew-shrink](#03-flew-shrink)
+  - [flew-shrink](#03.3-flew-shrink)
   - [flew-basis](#03-flew-basis)
   - [align-self](#03-align-self)
 
