@@ -13,7 +13,7 @@
   - [flew-grow](#03-flew-grow)
   - [flew-shrink](#03.3-flew-shrink)
   - [flew-basis](#03-flew-basis)
-  - [align-self](##align-self)
+  - [align-self](#34-align-self)
 
 
 ## 01 flex 布局的特点
@@ -109,7 +109,7 @@ order: 1
 ### 03.4 flex-basis
 属性定义了在分配多余空间之前，项目占据的主轴空间。
 
-###align-self
+### 3.4. align-self
 设置单个元素的对齐方式。
 
 其可设置的属性如下：
