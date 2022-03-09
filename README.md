@@ -14,7 +14,6 @@
 - [mask | 遮罩属性](./note/mask.md)
 - [clip-path | 图形裁剪](./note/clip-path.md)
 - [animation | 动画效果](./note/animation.md)
-- [resize | 调整元素宽高](./note/resize.md)
 - [选择器](./note/selectors.md)
 - [伪类](./note/伪类.md)
 - [伪元素](./note/伪元素.md)

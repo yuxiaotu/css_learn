@@ -1,16 +1,26 @@
 # Grid 属性
 
-- [grid 布局的作用](#01-布局的特点作用)
-- [行和列的特点](#02-行和列)
-- [行列对齐方式](#03-行列对齐方式)
-- [单元格](#04-单元格)
+- [grid 布局的作用](#1-布局的特点作用)
+- [行和列的特点](#2-行和列)
+  - [grid-template-columns](#21-grid-template-columns-和-grid-template-rows)
+  - [grid-template-rows](#21-grid-template-columns-和-grid-template-rows)
+  - [grid-template-area](#22-grid-template-area)
+- [行列对齐方式](#3-行列对齐方式)
+- [单元格](#4-单元格)
+  - [justify-item](#41-justify-items-和-align-items)
+  - [align-items](#41-justify-items-和-align-items)
+  - [grid-column/row-start](#42-grid-column/row-start-和-grid-column/row-end)
+  - [grid-column/row-end](#42-grid-column/row-start-和-grid-column/row-end)
+  - [justify-self](#43-justify-self-和-align-self)
+  - [align-self](#43-justify-self-和-align-self)
+- [单元格排列顺序](#5-单元格排列顺序)
 
 
-## 01 grid 布局的特点
+# 1. grid 布局的特点
 `grid` 布局也叫「网格布局」，相对于 `flex` 布局，这种方式可以在二维空间上进行布局，可以将一个页面划分为几个主要区域。可以像表格一样按照行或者是列来对齐元素。
 
 
-## 02 行和列
+# 2. 行和列
 使用 `display:grid` 将容器设置为 `grid` 布局模式，容器内的水平区域称为「行」，垂直区域称为「列」，将容器分为了若干个「单元格」。
 
 以下属性用于设置行和列：
@@ -20,7 +30,7 @@
 - grid-area
 
 
-### 02.1 grid-template-columns 和 grid-template-rows
+## 2.1. grid-template-columns 和 grid-template-rows
 `grid-template-colums` 用于设置「列数」和「列宽」。`grid-template-rows` 用于设置「行数」和「行高」。
 
 可以通过以下方式设置：
@@ -63,8 +73,7 @@ grid-template-columns: 1fr 1fr minmax(100px, 1fr)
 grid-template-column: [c1] 100px [c2] 100px
 ```
 
-
-### 02.2 grid-template-area
+## 2.2. grid-template-area
 `grid-template-area` 通过指定标识的方法来定义区域。需要和 `grid-area` 属性一起使用。
 
 例如，将容器被划为 9 个单元格，顶部三个 `header` 组成为一个区域，中间区域分为了 `main` 和 `sider` 两个区域，最下面的三个单元格合并为 `footer`。
@@ -93,8 +102,7 @@ grid-area: footer;
 使用 `grid-template-area` 时，当有不需要用到的单元格可以用 `.` 代替。
 
 
-
-## 03 行列对齐方式
+# 3. 行列对齐方式
 以下两个属性，分别用于设置「行」和「列」之间的对齐方式。`justify-content` 表示「列」在水平方向上的对齐方式，`align-content` 表示「行」在垂直方向上的对齐方式。
 
 - justify-content 
@@ -111,7 +119,7 @@ grid-area: footer;
 
 
 
-## 04 单元格
+# 4. 单元格
 由「行」和「列」划分出来的每个单元格都可以通过以下属性进行设置。
 
 - justify-items
@@ -122,7 +130,7 @@ grid-area: footer;
 - grid-row-end
 
 
-### 04.2 justify-items 和 align-items
+## 4.1. justify-items 和 align-items
 `justify-items` 设置单元格内容在水平方向上的对齐方式，`align-items` 设置单元格内容在垂直方向上的对齐方式。
 
 - start：沿着开始方向排列。
@@ -130,7 +138,7 @@ grid-area: footer;
 - center：居中排列。
 - stretch（默认）：填充整个单元格。
 
-### 04.3 grid-column/row-start 和 grid-column/row-end 
+## 4.2. grid-column/row-start 和 grid-column/row-end 
 设置单元格左右边框开始和终止位置。
 
 由下图可知通过设置边框的位置可以得到几个小的单元格，得到一个大的单元格。同样可以由 `grid-rows-start` 和 `grid-column-end` 来设置上下边框的位置。也可以使用 `grid-column` 和 `grid-row`  这两个简写属性。
@@ -145,7 +153,7 @@ grid-area: footer;
 }
 ```
 
-### 04.4 justify-self 和 align-self
+## 4.3. justify-self 和 align-self
 `justify-self`设置单个单元格内容在水平方向上的对其方式，`align-selg`设置单个单元格在垂直方向上的对其方式。
 
 可取以下值：
@@ -156,7 +164,7 @@ grid-area: footer;
 
 
 
-## 05 单元格排列顺序
+# 5. 单元格排列顺序
 `grid-auto-flow` 用于设置单元格的排列顺序。
 
 可以以下值：

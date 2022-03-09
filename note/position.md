@@ -1,13 +1,13 @@
 # position 定位属性
 
-- [position 属性的作用](#01-position属性的作用)
-- [relative](#02-relative)
-- [absolute](#03-absolute)
-- [fixed](#04-fixed)
-- [sticky](#05-sticky)
+- [position 属性的作用](#1-position属性的作用)
+- [relative](#2-relative)
+- [absolute](#3-absolute)
+- [fixed](#4-fixed)
+- [sticky](#5-sticky)
 
 
-## 01 position 属性的作用
+# 1. position 属性的作用
 标签元素在网页中有三种排列方式：
 
 - ### 普通流
@@ -27,7 +27,7 @@
 - sticky
 
 
-## 02 relative
+# 2. relative
 `relative`，表示「相对定位」。即标签元素的移动是相对于其原来的位置而言的。
 
 元素会依据未添加该属性时的位置进行改变，而且会在原来位置留下空白，所以可以在不影响元素布局的情况下调整元素的位置。移动元素会覆盖其他的元素。
@@ -35,7 +35,7 @@
 ![relative](https://img-blog.csdn.net/20141216154634968)
 
 
-## 02 absolute
+# 3. absolute
 `absolute`，表示「绝对定位」。
 
 标签元素会被移出正常的文档流，也不会再为其预留空间。标签元素会找到离它最近的一个祖先元素，同时该祖先元素也必须设置 `position` 属性，且取值不能是 `static`。按照这个祖先元素来进行移动。
@@ -47,13 +47,13 @@
 ![absolute](https://img-blog.csdn.net/20141216154642515)
 
 
-## 03 fixed
+# 4. fixed
 `fixed`，表示「固定定位」。
 
 元素的位置相对于浏览器窗口是固定的。在页面滚动的情况下，标签元素的位置不会改变。
 
 
-## 04 sticky
+# 5. sticky
 `sticky`，表示「粘性定位」。
 
 是 `relative` 和 `fixed` 定位方式的混合，标签元素在跨越指定阈值前是 `relative` 定位，跨越指定阈值后是 `fixed` 定位。
