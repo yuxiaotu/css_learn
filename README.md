@@ -34,4 +34,6 @@
 - [磨砂玻璃背景效果 | filter 属性](./src/style/frosted-glass-bg.css)
 - [卡片展开 | transform 属性](./src/style/card-clip-extend.css)
 
+## 资讯
 
+- [2022 年最受瞩目的新特性 CSS @layer 到底是个啥？](https://juejin.cn/post/7077758893442465806)

@@ -54,7 +54,8 @@ div {
 - ease-in
 - ease-out
 - ease-in-out
-- cubic-bezier()
+- cubic-bezier()： 贝塞尔曲线，生成速度曲线的函数
+- steps()：将过渡分割成段
 
 
 ## 4. 是否反向运动
