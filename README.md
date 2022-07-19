@@ -1,7 +1,7 @@
 # CSS 学习笔记
 
 ## 基础
-- [position | 元素定位](./note/position.md)
+- [position | 元素定位属性](./note/position.md)
 - [float | 浮动属性](./note/float.md)
 - [transition | 过渡属性](./note/transition.md)
 - [transform | 形变属性](./note/transform.md)
@@ -35,5 +35,4 @@
 - [卡片翻转 | backface-visibility](/src/style/turn-card.css)
 - [磨砂玻璃背景效果 | filter 属性](./src/style/frosted-glass-bg.css)
 - [卡片展开 | transform 属性](./src/style/card-clip-extend.css)
-
 
