@@ -1,0 +1,10 @@
+.box {
+  display: flex;
+  position: relative;
+}
+
+.box > div {
+  width: 50xp;
+  height: 50px;
+  background-color: red;
+}

@@ -1,0 +1,35 @@
+.con {
+  display: flex;
+  height: 100px;
+ 
+}
+
+.con div {
+  position: relative;
+}
+
+.con  :nth-child(1) {
+  width: 50%;
+  position: relative;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.con :nth-child(2) {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.con :nth-child(1)::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ccc;
+  position: absolute;
+  right: 0;
+  top: -5px;
+  transform: translate(50%);
+}
