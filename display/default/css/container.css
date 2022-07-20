@@ -1,14 +1,13 @@
 .con {
   display: flex;
-  height: 100px;
- 
+  min-height: 100px;
 }
 
-.con div {
+.con > div {
   position: relative;
 }
 
-.con  :nth-child(1) {
+.con > div:first-child {
   width: 50%;
   position: relative;
   border-right: 1px solid #ccc;
@@ -16,13 +15,13 @@
   padding: 20px;
 }
 
-.con :nth-child(2) {
+.con > div:last-child {
   width: 50%;
   box-sizing: border-box;
   padding: 20px;
 }
 
-.con :nth-child(1)::before {
+.con > div:first-child::before {
   content: "";
   width: 20px;
   height: 20px;
