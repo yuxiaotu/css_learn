@@ -1,6 +1,10 @@
+body {
+  padding: 50px;
+}
+
 .con {
   display: flex;
-  min-height: 100px;
+  min-height: 400px;
 }
 
 .con > div {
@@ -8,15 +12,15 @@
 }
 
 .con > div:first-child {
-  width: 50%;
+  width: 40%;
   position: relative;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #ebedf0;
   box-sizing: border-box;
   padding: 20px;
 }
 
 .con > div:last-child {
-  width: 50%;
+  width: 60%;
   box-sizing: border-box;
   padding: 20px;
 }
@@ -26,9 +30,18 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: #dcdee0;
   position: absolute;
   right: 0;
   top: -5px;
   transform: translate(50%);
+}
+
+.con .bg {
+  background-color: #f7f8fa;
+  background-clip: content-box;
+}
+
+.con .des {
+  text-align: right;
 }
