@@ -42,6 +42,12 @@ body {
   background-clip: content-box;
 }
 
-.con .des {
-  text-align: right;
+.con .status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  background-color: #f2f3f5 ;
+  box-sizing: border-box;
+  padding: 10px;
 }

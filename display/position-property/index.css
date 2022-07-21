@@ -10,14 +10,15 @@
   height: 150px;
 }
 
-.box-2 {
+.position-relative {
   position: relative;
   top: 20px;
   left: 20px;
 }
 
-.box-3 {
+.position-absolute {
   position: absolute;
   top: 20px;
   left: 20px;
 }
+
