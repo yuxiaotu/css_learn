@@ -14,7 +14,7 @@ body {
 .con > div:first-child {
   width: 40%;
   position: relative;
-  border-right: 1px solid #ebedf0;
+  border-right: 1px solid #dcdee0;
   box-sizing: border-box;
   padding: 20px;
 }
@@ -38,7 +38,7 @@ body {
 }
 
 .con .bg {
-  background-color: #f7f8fa;
+  background-color: #f2f3f5;
   background-clip: content-box;
 }
 

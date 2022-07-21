@@ -1,0 +1,9 @@
+.img-float {
+  float: left;
+  width: 250px;
+}
+
+.text-float {
+  float: left;
+  font-size: 30px;
+}
