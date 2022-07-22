@@ -1,0 +1,20 @@
+.d3-box {
+  perspective: 800px;
+}
+
+.transform-roate-y {
+  width: 150px;
+  height: 150px;
+  transform: rotateY(30deg);
+  transition: all .5s ease;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transform-roate-y:hover{
+  transform: rotate(0deg);
+}
